@@ -69,7 +69,7 @@ $(document).ready(function(){
       let str = "";
       for (let i = 0; i < numPeople; i++) {
         str += `
-          <div class="col">
+          <div class="col-4">
             <img src="assets/img/users/${i}.jpg" class="img-fluid">
           </div>
         `;
