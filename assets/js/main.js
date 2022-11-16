@@ -58,30 +58,14 @@
 
 $(document).ready(function(){
     $('#sample-size').on('change', function(){
-      console.log("check");
-      // const PERCENT = 8.4;
     	let numPeople = Number($(this).val());
-      // let numWith = Math.floor((PERCENT * numPeople)/100);
-      // want to show the 1st 25, 50, 100 images, etc.
-      // thinking about adding classes to the images?
-      // add seperate classes for the people in each sample who are "with" and "without"
-      // $("div.with-"numPeople).
       let str = "";
       for (let i = 0; i < numPeople; i++) {
         str += `
-          <div class="col-4">
-            <img src="assets/img/users/${i}.jpg" class="img-fluid">
+          <div class="col-3">
+            <img src="assets/img/users/${i}.jpg" class="img-fluid" id="person-${i}">
           </div>
         `;
-
-        // if (i < numWith) {
-        //   // add/toggle class that displays these images with a blue border
-        // }
-        // else {
-        //   // add/toggle class that displays images with a black border for people "without"
-        // }
-        // show the first numPeople – each image would have a class saying if it's in the first 25, 50 people, etc.
-        // $("div."+numPeople).show();
       }
       $(".visualization").html(str);
     });
