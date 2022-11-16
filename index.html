@@ -20,7 +20,7 @@
 			<h1>MORE THAN A NUMBER</h1>
 		</div>
 		<div class="row">
-			<p>More Than A Number is a data visualization of American adults with depression. According to the 2020 National Survey on Drug Use and Health, 8.4% of Americans aged 18 and older experienced at least one depressive episode between 2019-2020. Though this may not seem like a high number, this data reflects real people and real struggles. More Than A Number strives to further humanize and contextualize this statistic by displaying the proportion of Americans with depression amongst a user-specified sample of randomly generated profile pictures.
+			<p>More Than A Number is a data visualization of American adults with depression. According to the 2020 National Survey on Drug Use and Health, 8.4% of Americans aged 18 and older experienced at least one depressive episode between 2019-2020. Though this may not seem like a high number, this data reflects real people and real struggles. More Than A Number strives to further humanize and contextualize this statistic by displaying the proportion of Americans with depression amongst a user-specified sample of randomly generated profile pictures. To experience the full effects of this visualizaiton, this website is best viewed on a laptop screen or larger.
 </p>
 		</div>
 		<div class-"row">
@@ -28,22 +28,26 @@
 </p>
 		</div>
 		<div class="row">
-			<div class="select-size">
-				<div class="dropdown">
-					<button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+			<div class="dropdown">
+				<select id="sample-size">
+					<option value="25">25 People</option>
+					<option value="50">50 People</option>
+					<option value="100">100 People</option>
+				</select>
+					<!-- <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
 						Select a Sample Size
-					</button>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					</button> -->
+					<!-- <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 						<a class="dropdown-item" href="#">20 People</a>
 						<a class="dropdown-item" href="#">50 People</a>
 						<a class="dropdown-item" href="#">100 People</a>
-					</div>
+					</div> -->
 				</div>
 			</div>
-		</div>
 		<div class="row">
 			<div class="visualization hide">
-				<canvas id="myCanvas" width="235" height="218"></canvas>
+				<!-- want to toggle blue/black border-->
+				<img src="assets/img/avatar-7a02db53e3e8a88d1e667d92388ee930.jpg" width="235" height="218" class="25 50 100">
 			</div>
 		</div>
 	</div>
