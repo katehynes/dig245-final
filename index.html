@@ -9,6 +9,9 @@
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Montserrat&display=swap" rel="stylesheet">
 
 
 </head>
@@ -16,34 +19,63 @@
 <body>
 
 	<div class="container">
-		<div class="row">
-			<h1>MORE THAN A NUMBER</h1>
+		<div class="row img-center">
+			<img src="assets/img/morethananumber-img.png" class="logo">
 		</div>
 		<div class="row">
-			<h2>Depression in America</h2>
-			<p>According to the 2020 National Survey on Drug Use and Health, 8.4% of Americans aged 18 and older experienced at least one depressive episode between 2019-2020. Though this may not seem like a high number, this data reflects real people and real struggles.
-			</p>
+			<div class="col-1"></div>
+			<div class="col-10">
+				<h2 class="cabin-sketch">Depression in America</h2>
+				<p class="montserrat text">According to the 2020 National Survey on Drug Use and Health, 8.4% of Americans aged 18 and older experienced at least one depressive episode between 2019-2020. Though this may not seem like a high number, this data
+					reflects real people and
+					real struggles.
+				</p>
+			</div>
 		</div>
 		<div class="row">
-			<h2>What This Number Means</h2>
-			<p>Sometimes data doesn’t reflect the full picture – it’s hard to quantitatively measure the human condition. This project offers a data visualization tool to “re-humanize” this statistic. Use the drop-down menu below to generate your chosen number of profile pictures. Some of the profile photos will represent American adults who experienced a depressive episode in the past year, indicated by (they will look like this). Note: to experience the full effects of this visualization, this website is best viewed on a laptop screen or larger.</p>
-		</div>
-		<div class-"row">
-			<h2>Disclaimer</h2>
-			<p>To protect users’ privacy, none of the people in these photos are real. Instead, all profile images were generated from This Person Does Not Exist, an API that computes hyper-realistic images of fake people. In addition,
-				the photos displayed are in no way representative of measured distributions amongst different demographic groups. Don't let this detract from the goal of this project – although all the photos used in this visualization are fake, they could just as easily be real.
-			</p>
+			<div class="col-12">
+				<p class="statistic cabin-sketch">8 OUT OF 100 PEOPLE</p>
+			</div>
 		</div>
 		<div class="row">
-			<div class="dropdown">
-				<select id="sample-size">
-					<option>Select</option>
-					<option value="5">5 People</option>
-					<option value="10">10 People</option>
-					<option value="25">25 People</option>
-					<option value="50">50 People</option>
-					<option value="100">100 People</option>
-				</select>
+			<div class="col-1"></div>
+			<div class="col-10">
+				<h2 class="cabin-sketch">What This Number Means</h2>
+				<p class="montserrat text">Sometimes data doesn’t reflect the full picture – it’s hard to quantitatively measure the human condition. This project offers a data visualization tool to “re-humanize” this statistic.
+				</p>
+				<!-- <br> -->
+				<p class="montserrat text"> Use the drop-down menu below to
+					generate your chosen
+					number of profile pictures. Some of the profile photos will represent American adults who experienced a depressive episode in the past year, indicated by (they will look like this). Note: to experience the full effects of this
+					visualization,
+					this website is best viewed on a laptop screen or larger.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1"></div>
+			<div class="col-10">
+				<h2 class="cabin-sketch">Disclaimer</h2>
+				<p class="montserrat text">To protect users’ privacy, none of the people in these photos are real. Instead, all profile images were generated from This Person Does Not Exist, an API that computes hyper-realistic images of fake people. In
+					addition,
+					the photos displayed are in no way representative of measured distributions amongst different demographic groups.</p>
+				<p class="montserrat text"> Don't let this detract from the goal of this project – although all the photos used in this visualization are fake, they could
+					just as easily be real.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-1"></div>
+			<div class="col-10">
+				<div class="dropdown">
+					<select id="sample-size">
+						<option class="montserrat">Select</option>
+						<option value="5">5 People</option>
+						<option value="10">10 People</option>
+						<option value="25">25 People</option>
+						<option value="50">50 People</option>
+						<option value="100">100 People</option>
+					</select>
+				</div>
 			</div>
 		</div>
 		<div class="row visualization">

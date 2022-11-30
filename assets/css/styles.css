@@ -3,3 +3,25 @@
 .visualization {
   background-color: pink;
 }
+.img-center {
+  display: flex;
+  justify-content: center;
+}
+.logo {
+  width: 100%;
+  max-width: 500px;
+}
+.cabin-sketch {
+  font-family: 'Cabin Sketch', cursive;
+}
+.montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+.statistic {
+  text-align: center;
+  color: #fcd6e3;
+  font-size: 130px;
+}
+.text {
+  font-size: 24px;
+}
