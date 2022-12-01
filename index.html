@@ -19,9 +19,11 @@
 <body>
 
 	<div class="container">
-		<div class="row img-center">
-			<img src="assets/img/morethananumber-img.png" class="logo">
+		<!-- logo -->
+		<div class="row img-center mt-5 mb-5">
+			<img src="assets/img/morethananumber-img.png" alt="A pink-and-orange watercolor gradient, with the text `More Than A Number` written over top." class="logo">
 		</div>
+		<!-- Brief background for the project, including the statistic of American adults who experienced a depressive episode in 2019-2020 -->
 		<div class="row">
 			<div class="col-1"></div>
 			<div class="col-10">
@@ -32,26 +34,27 @@
 				</p>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row mt-5 mb-5">
 			<div class="col-12">
 				<p class="statistic cabin-sketch">8 OUT OF 100 PEOPLE</p>
 			</div>
 		</div>
-		<div class="row">
+		<!-- Explanation of the project and the data visualization -->
+		<div class="row mt-5 mb-5">
 			<div class="col-1"></div>
 			<div class="col-10">
 				<h2 class="cabin-sketch">What This Number Means</h2>
 				<p class="montserrat text">Sometimes data doesn’t reflect the full picture – it’s hard to quantitatively measure the human condition. This project offers a data visualization tool to “re-humanize” this statistic.
 				</p>
-				<!-- <br> -->
 				<p class="montserrat text"> Use the drop-down menu below to
 					generate your chosen
-					number of profile pictures. Some of the profile photos will represent American adults who experienced a depressive episode in the past year, indicated by (they will look like this). Note: to experience the full effects of this
+					number of profile pictures. Some of the profile photos will represent American adults who experienced a depressive episode in the past year, indicated by a black border around the image. Note: to experience the full effects of this
 					visualization,
 					this website is best viewed on a laptop screen or larger.</p>
 			</div>
 		</div>
-		<div class="row">
+		<!-- Explanation that the images (and faces) are computer-generated and disclaimer about representation of the data -->
+		<div class="row mt-5 mb-5">
 			<div class="col-1"></div>
 			<div class="col-10">
 				<h2 class="cabin-sketch">Disclaimer</h2>
@@ -63,14 +66,13 @@
 				</p>
 			</div>
 		</div>
-		<div class="row">
+		<!-- Select sample size button -->
+		<div class="row mt-5">
 			<div class="col-1"></div>
 			<div class="col-10">
-				<div class="dropdown">
+				<div class="dropdown montserrat text mb-5">
 					<select id="sample-size">
 						<option class="montserrat">Select</option>
-						<option value="5">5 People</option>
-						<option value="10">10 People</option>
 						<option value="25">25 People</option>
 						<option value="50">50 People</option>
 						<option value="100">100 People</option>
@@ -78,10 +80,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="row visualization">
-			<!-- <div class="visualization">
+		<!-- Stores the images generated according to selected sample size. The HTML element for each image is created in the javascript file -->
+		<div class="row visualization mt-5">
 
-			</div> -->
 		</div>
 	</div>
 
