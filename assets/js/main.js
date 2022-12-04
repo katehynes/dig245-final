@@ -10,7 +10,7 @@ $(document).ready(function() {
     let str = "";
     if (numPeople == 25) {
       /* 2 with */
-      for (let i = 0; i < 3; i++) {
+      for (let i = 0; i < 2; i++) {
         str += `
             <div class="col-3">
               <img src="assets/img/users/${i}.jpg" class="img-fluid with" id="person-${i}">
@@ -18,7 +18,7 @@ $(document).ready(function() {
           `;
       }
       /* 23 without */
-      for (let i = 3; i < numPeople; i++) {
+      for (let i = 2; i < numPeople; i++) {
         str += `
             <div class="col-3">
               <img src="assets/img/users/${i}.jpg" class="img-fluid without" id="person-${i}">
@@ -27,7 +27,7 @@ $(document).ready(function() {
       }
     } else if (numPeople == 50) {
       /* 4 with */
-      for (let i = 0; i < 5; i++) {
+      for (let i = 0; i < 4; i++) {
         str += `
             <div class="col-3">
               <img src="assets/img/users/${i}.jpg" class="img-fluid with" id="person-${i}">
@@ -35,7 +35,7 @@ $(document).ready(function() {
           `;
       }
       /* 46 without */
-      for (let i = 5; i < numPeople; i++) {
+      for (let i = 4; i < numPeople; i++) {
         str += `
             <div class="col-3">
               <img src="assets/img/users/${i}.jpg" class="img-fluid without" id="person-${i}">
@@ -44,7 +44,7 @@ $(document).ready(function() {
       }
     } else if (numPeople == 100) {
       /* 8 with */
-      for (let i = 0; i < 9; i++) {
+      for (let i = 0; i < 8; i++) {
         str += `
             <div class="col-3">
               <img src="assets/img/users/${i}.jpg" class="img-fluid with" id="person-${i}">
@@ -52,7 +52,7 @@ $(document).ready(function() {
           `;
       }
       /* 92 without */
-      for (let i = 9; i < numPeople; i++) {
+      for (let i = 8; i < numPeople; i++) {
         str += `
             <div class="col-3">
               <img src="assets/img/users/${i}.jpg" class="img-fluid without" id="person-${i}">
