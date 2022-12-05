@@ -9,16 +9,16 @@ $(document).ready(function() {
     let numPeople = Number($(this).val());
     let str = "";
     if (numPeople == 25) {
-      /* 2 with */
-      for (let i = 0; i < 2; i++) {
+      /* 5.25 ~ 5 with */
+      for (let i = 0; i < 5; i++) {
         str += `
             <div class="col-3">
               <img src="assets/img/users/${i}.jpg" class="img-fluid with" id="person-${i}">
             </div>
           `;
       }
-      /* 23 without */
-      for (let i = 2; i < numPeople; i++) {
+      /* 20 without */
+      for (let i = 5; i < numPeople; i++) {
         str += `
             <div class="col-3">
               <img src="assets/img/users/${i}.jpg" class="img-fluid without" id="person-${i}">
@@ -26,16 +26,16 @@ $(document).ready(function() {
           `;
       }
     } else if (numPeople == 50) {
-      /* 4 with */
-      for (let i = 0; i < 4; i++) {
+      /* 10.5 ~ 10 with */
+      for (let i = 0; i < 10; i++) {
         str += `
             <div class="col-3">
               <img src="assets/img/users/${i}.jpg" class="img-fluid with" id="person-${i}">
             </div>
           `;
       }
-      /* 46 without */
-      for (let i = 4; i < numPeople; i++) {
+      /* 40 without */
+      for (let i = 10; i < numPeople; i++) {
         str += `
             <div class="col-3">
               <img src="assets/img/users/${i}.jpg" class="img-fluid without" id="person-${i}">
@@ -43,16 +43,16 @@ $(document).ready(function() {
           `;
       }
     } else if (numPeople == 100) {
-      /* 8 with */
-      for (let i = 0; i < 8; i++) {
+      /* 21 with */
+      for (let i = 0; i < 21; i++) {
         str += `
             <div class="col-3">
               <img src="assets/img/users/${i}.jpg" class="img-fluid with" id="person-${i}">
             </div>
           `;
       }
-      /* 92 without */
-      for (let i = 8; i < numPeople; i++) {
+      /* 79 without */
+      for (let i = 21; i < numPeople; i++) {
         str += `
             <div class="col-3">
               <img src="assets/img/users/${i}.jpg" class="img-fluid without" id="person-${i}">
