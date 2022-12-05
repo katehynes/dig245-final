@@ -1,4 +1,76 @@
 /* css */
+@media only screen and (max-width: 767px) {
+  .font-size {
+    font-size: 20px;
+  }
+
+  .statistic {
+    text-align: center;
+    color: #fcd6e3;
+    font-size: 60px;
+  }
+
+  .with {
+    border: 6px solid black;
+    border-radius: 15px;
+    margin-bottom: 24px;
+  }
+
+  .without {
+    border: 6px solid lightgray;
+    border-radius: 15px;
+    margin-bottom: 24px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .text {
+    font-size: 22px;
+  }
+
+  .statistic {
+    text-align: center;
+    color: #fcd6e3;
+    font-size: 90px;
+  }
+
+  .with {
+    border: 8px solid black;
+    border-radius: 20px;
+    margin-bottom: 24px;
+  }
+
+  .without {
+    border: 8px solid lightgray;
+    border-radius: 20px;
+    margin-bottom: 24px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .text {
+    font-size: 24px;
+  }
+
+  .statistic {
+    text-align: center;
+    color: #fcd6e3;
+    font-size: 115px;
+  }
+
+  .with {
+    border: 10px solid black;
+    border-radius: 40px;
+    margin-bottom: 24px;
+  }
+
+  .without {
+    border: 10px solid lightgray;
+    border-radius: 40px;
+    margin-bottom: 24px;
+  }
+}
+
 .img-center {
   display: flex;
   justify-content: center;
@@ -17,36 +89,18 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.statistic {
-  text-align: center;
-  color: #fcd6e3;
-  font-size: 130px;
-}
-
-.text {
-  font-size: 24px;
-}
-
-.with {
-  border: 10px solid black;
-  border-radius: 40px;
-  margin-bottom: 24px;
-}
-
-.without {
-  border: 10px solid lightgray;
-  border-radius: 40px;
-  margin-bottom: 24px;
-}
 a:link {
   color: black;
 }
+
 a:visited {
   color: black;
 }
+
 a:hover {
   color: #fcd6e3;
 }
+
 a:active {
   color: black;
 }
