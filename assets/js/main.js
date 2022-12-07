@@ -13,7 +13,10 @@ $(document).ready(function() {
     71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90,
     91, 92, 93, 94, 95, 96, 97, 98, 99];
   $('#sample-size').on('change', function() {
-    /* randomize order in which users appear with each sample generated */
+    /* Randomize order in which users appear with each sample generated
+    Credit:  W3Schools Javascript Array Sort
+    https://www.w3schools.com/js/tryit.asp?filename=tryjs_array_sort_random
+    */
     userNums.sort(function(){return 0.5 - Math.random()});
     let numPeople = Number($(this).val());
     let str = "";
